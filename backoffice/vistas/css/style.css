@@ -1,0 +1,225 @@
+
+/*=============================================
+colores del texto logo
+=============================================*/
+.negro{
+ background-color: #000000;
+}
+
+.text-naranjaLogo{
+	color:#FF7E09;
+	font-weight: bold;
+}
+.text-amarilloLogo{
+	color:#FFDE59;
+	font-weight: bold;
+}
+.text-blancoLogo{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/*=============================================
+propiedades color borde MDN
+=============================================*/
+
+.bordosSuperiorMDN {
+  	border-style: ridge;
+  	border-width: 1px 1px 1px 1px;
+  	border-color: #AEB0B3; 	
+}
+
+.bordosp2 {
+  	border-style: solid;
+  	border-width: 2px 0px 1px 0px;
+  	border-color: #AEB0B3; 	 	
+}
+.bordosp36 {
+  	border-style: solid;
+  	border-width: 2px 0px 0px 0px;
+  	border-color: #AEB0B3; 	 	
+}
+.bordosp3 {
+  	border-style: solid;
+  	border-width: 0px 0px 2px 2px;
+  	border-color: #AEB0B3; 	 	
+}
+.bordosp4 {
+  	border-style: solid;
+  	border-width: 0px 2px 2px 2px;
+  	border-color: #AEB0B3; 	 	
+}
+
+.bordosp5 {
+  	border-style: solid;
+  	border-width: 0px 0px 2px 0px;
+  	border-color: #AEB0B3; 	 	
+}
+
+.bordosp {
+  	border-style: solid;
+  	border-color: #AEB0B3;
+   	
+}
+
+.titulocanvas{
+	margin-top: 10px;
+}
+
+
+/*=============================================
+post it
+=============================================*/
+.quote-container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.note {
+  color: #333;
+  position: relative;
+  width: 170px;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+
+
+.yellow {
+  background: #faf56b;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+.verde {
+  background: #75fa6b;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+} 
+
+.azul {
+  background: #7FFFD4;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+.naranja {
+  background: #F8A608;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+/*=============================================
+efecto para las imagenes
+=============================================*/
+.imagenes{
+	box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 
+	0 4px 25px 0px rgba(0, 0, 0, 0.12), 
+	0 8px 10px -5px rgba(0, 0, 0, 0.2); 
+	border-radius: 10px;
+}
+.centrarContenido {
+	text-align:center;
+}
+
+
+/*=============================================
+Deslizador de videos
+=============================================*/
+
+.slide-area li a figure{
+	position: relative;
+}
+
+.slide-area li a figure.activado::before{
+	position:absolute;
+	content: "\f144";
+	font-family: "Font Awesome 5 Free";
+	font-size:2em;
+	color:white;
+	text-align:center;
+	width: 46px;
+	line-height: 46px;
+	background: rgba(0,0,0,.7);
+	top:50%;
+	margin-top: -23px;
+	left:50%;
+	margin-left: -23px;
+	border-radius:100%;
+	z-index:1;
+}
+
+.slide-area li a figure.desactivado::before{
+	position:absolute;
+	content: "Activar suscripción";
+	font-size:18px;
+	color:white;
+	text-align:center;
+	width: 200px;
+	line-height: 70px;
+	background: rgba(0,0,0,.7);
+	top:50%;
+	margin-top: -35px;
+	left:50%;
+	margin-left: -100px;
+	border-radius:10px;
+	z-index:1;
+}
+
+
+.slide-area li a figure.activado img{
+	opacity:1;
+}
+
+.slide-area li a figure.desactivado img{
+	opacity:.5;
+}
+
+
+/*=============================================
+Formulario suscripción
+=============================================*/
+input[type="checkbox"]{
+	display:none;
+}
+
+label[for="aceptarTerminos"] span{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background:#E9ECEF;
+	vertical-align:middle;
+	border-radius:100%;
+	margin-right: 5px;
+	border:1px solid #aaa;
+	cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label[for="aceptarTerminos"] span{
+	background:url(../img/plantilla/check.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border:1px solid #fff;
+
+}
+
+#signatureparent{
+	width:300px; 
+	border-bottom:2px solid #333;
+}
+
+
+
